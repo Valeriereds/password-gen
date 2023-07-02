@@ -21,21 +21,12 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   var howMany = window.prompt("How many characters do you want in your password?");
-  console.log(howMany);
+  // console.log(howMany);
   // prompt for how many characters
-  if (!userCharacters) {
+  if (!howMany) {
     return;
   }
   
-  if (isNaN(userCharacters)) {
-    window.alert("You must enter a valid number!");
-    return;
-  }
-
-  if (userCharacters < 8 || userCharacters > 128) {
-    window.alert("Your password must be at least 8 characters long and no more than 128.");
-    return;
-  };
 
   if (howMany < 8 || howMany > 128) {
     window.alert("Please choose a length between 8-128 characters."); {
@@ -90,25 +81,25 @@ function generatePassword() {
     window.alert("You must choose at least one type of character to create a password. Please try again.");
       return;
   };
-  // console.log(newPass) testing, testing
-}
-// var push math.random into new array
-// need a for loop to choose a random number
   var newNum = []
   
   for (var i = 0; i < howMany; i++) {
     var rdmNum = newPass[Math.floor(Math.random() * newPass.length)];
     newNum.push(rdmNum)
+  }
   
    // var password = turn array into string .toString()
-
+  
   var password = newNum.join("").toString();
   
   return password;
+  
+  // console.log(newPass) testing, testing
+}
+// var push math.random into new array
+// need a for loop to choose a random number
 
-  }
-
-generatePassword()
+// generatePassword()
   
 
  // return password;
