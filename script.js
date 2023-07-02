@@ -87,7 +87,7 @@ function generatePassword() {
     var rdmNum = newPass[Math.floor(Math.random() * newPass.length)];
     newNum.push(rdmNum)
   }
-  
+  // for loop needs to be closed before starting a new string
    // var password = turn array into string .toString()
   
   var password = newNum.join("").toString();
