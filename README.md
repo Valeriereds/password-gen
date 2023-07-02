@@ -6,6 +6,10 @@ I've created this random password generator to showcase all the skills I have le
 
 ## Usage
 
+![Screenshotofpage](Assets/Images/screenshot-password-gen.png)
+
+https://valeriereds.github.io/password-gen/
+
 To use the random password generator, first start off by clicking the red 'generate' button, located within the password generator box. You will then see a prompt, asking you how many characters you would like your passwords' length to be. After choosing a length between 8-126, the page will then prompt you to confirm/deny if you would like UPPERCASE letters, and again for lowercase, special characters, and numbers. Once the user has decided which and how many characters they would like their password to be, the new randomly generated password will show up in the empty box! If the user gives a wrong number/letter to the password length prompt, the webpage will return it to the original screen. 
 
 ## Credits
